@@ -1,0 +1,36 @@
+To install waydroid to have hudini that prevents from having unsupported apps and get magisk too.
+1. install waydroid installer couse the mirror links sucks.
+-  sudo pacman -S waydroid
+open waydroid and install minimal..dont install gapps yet.
+
+2. After install initioalize it and enable it too
+-  sudo waydroid init
+# To open waydroid need to do --  waydroid session start   -- to start and -- waydroid show-full-ui -- opens it..to close it run -- waydroid session stop --..if you dont want to start eveytime you open it from rofi than need to enable it
+-  sudo systemctl enable waydroid-container.service //it makes waydroid session start execute on startup.
+
+3. now need gapps hudini and all that
+to have search in your browser ( waydroid script ) or copy paste thi
+
+git clone https://github.com/casualsnek/waydroid_script
+cd waydroid_script
+python3 -m venv venv
+venv/bin/pip install -r requirements.txt
+sudo venv/bin/python3 main.py
+
+it will ask to choose some options so choose
+Android 13 
+select install
+than select by choosing space bar
+gapps or microg(if you hate google)
+libndk
+lihudini
+magisk
+smartdock(if u want)
+than hit enter
+
+4. Google Play Certification
+run this:
+-  sudo waydroid shell -- sh -c "sqlite3 /data/data/*/*/gservices.db 'select value from main where name = \"android_id\";'"
+it will give a android id copy it..and go to this link:
+-  https://www.google.com/android/uncertified
+and paste it to verify..it can take some sec or min to confirm..than google play store will work.
