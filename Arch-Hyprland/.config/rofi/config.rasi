@@ -8,6 +8,6 @@ configuration{
     icon-theme: "Papirus";
 }
 
-@theme "/home/sloth/.config/rofi/theme.rasi"
+@theme "../../.config/rofi/theme.rasi"
 
 
