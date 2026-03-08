@@ -1,5 +1,5 @@
 # ~/.config/alacritty/alacritty.toml
-general.import = ["/home/sloth/.cache/wal/colors-alacritty.toml"]
+general.import = ["../../.cache/wal/colors-alacritty.toml"]
 general.live_config_reload = true
 
 [terminal]
