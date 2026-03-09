@@ -1,18 +1,5 @@
 - To mount ntfs pertitions in Arch
-✅ Step 1: First make mount pertition in /mnt file:
-#  sudo mkdir -p /mnt/HDDVolume /mnt/HDD2Volume /mnt/SSDVolume /mnt/Windows
-- If error appears than 1st unmount everything that try.
-✅ Step 2: know about your pertition name with:
-#  lsblk -f
-- it will show all the pertion names copy the pertion names that you need.
-- we are using ntfs-3g for now
-#  sudo vim /etc/fstab
-- add the partition and its serial number
-# /dev/sda2
-UUID=46E63201E631F233 /mnt/HDDVolume  ntfs-3g  rw,auto,uid=1000,gid=1000,dmask=022,fmask=133,x-gvfs-show 0 0
-- Than mount the pertition and reload file manager
-#  sudo mount -a
-nemo -q
+this part removed..follow the steps below.
 
 #######################################################################
 #  The upper method is fine but can give some problems in future      #
