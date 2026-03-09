@@ -51,5 +51,6 @@ UUID=8CA0A7F9A0A7E7C2 /media/SSDVolume  ntfs-3g  rw,auto,uid=1000,gid=1000,dmask
 #  sudo systemctl daemon-reload
 #  sudo mount -a
 - than sudo reboot
+if you want
 
 
